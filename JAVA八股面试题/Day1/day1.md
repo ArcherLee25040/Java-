@@ -7,13 +7,13 @@ Day1
 ---
 1、JAVA中有哪几种方式创建线程执行任务
 
-(1)继承Thread类
+1)继承Thread类
 
 ``` JAVA
 public class Thread1 extends Thread {
 
   public static void main(String[] args){
-    Thread1 thread = new Thread1();
+    Thread1 thread = new Thread();
     thread.start();
   }
 
@@ -23,26 +23,3 @@ public class Thread1 extends Thread {
   }
 }
 ```
-
-**1/重写的是run()方法，而不是start方法，但是占用了继承的名额，JAVA中的类是单继承**
-
-**2/但是接口可以多继承**
-
-(2)实现Runnable接口
-
-``` JAVA
-public class Thread1 implements Runnable {
-  public class void main(String[] args) {
-    Thread  thread = new Thread(new Thread1()) ;
-    thread.start;
-  }
-  public void run(){
-    System.out.Println("hello");
-  }
-}
-
-```
-
-(3)
-
-(4)
